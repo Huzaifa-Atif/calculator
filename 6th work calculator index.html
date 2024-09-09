@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="6th work calculator style.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            flex: 1;
+            margin: 5px;
+            padding: 27px;
+            font-size: 24px;
+            color: white;
+            background-color: gray;
+        }
+        #heading {
+            text-align: right;
+            font-size: 34px;
+            padding: 37px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .btn-1{
+            background-color: orangered;
+        }
+        .btn-2{
+            background-color: orangered;
+        }
+        .btn-4{
+            background-color: orangered;
+        }
+        .btn-3{
+            background-color: orangered;
+        }
+        .btn-5{
+            background-color: orangered;
+        }
+        .btn-9{
+            background-color: orangered;
+        }
+        .btn-13{
+            background-color: orangered;
+        }
+        .btn-17{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <p id="heading">0</p>
+
+    <div class="button-row">
+        <button class="btn-1" onclick="handleclick('/')">/</button>
+        <button class="btn-2" onclick="handleclick('%')">%</button>
+        <button class="btn-3" onclick="handleclick('+/-')">+/-</button>
+        <button class="btn-4" id="ac-button">AC</button>
+    </div>
+    <div class="button-row">
+        <button class="btn-5" onclick="handleclick('*')">X</button>
+        <button class="btn-6" onclick="handleclick('9')">9</button>
+        <button class="btn-7" onclick="handleclick('8')">8</button>
+        <button class="btn-8" onclick="handleclick('7')">7</button>
+    </div>
+    <div class="button-row">
+        <button class="btn-9" onclick="handleclick('-')">-</button>
+        <button class="btn-10" onclick="handleclick('6')">6</button>
+        <button class="btn-11" onclick="handleclick('5')">5</button>
+        <button class="btn-12" onclick="handleclick('4')">4</button>
+    </div>
+    <div class="button-row">
+        <button class="btn-13" onclick="handleclick('+')">+</button>
+        <button class="btn-14" onclick="handleclick('3')">3</button>
+        <button class="btn-15" onclick="handleclick('2')">2</button>
+        <button class="btn-16" onclick="handleclick('1')">1</button>
+    </div>
+    <div class="button-row">
+        <button class="btn-17" onclick="sum()">=</button>
+        <button class="btn-18" onclick="handleclick('.')">.</button>
+        <button class="btn-19" onclick="handleclick('0')">0</button>
+        <button class="btn-20"></button> <!-- Empty button for alignment -->
+    </div>
+
+    <script src="6th work calculator index.js"></script>
+</body>
+</html>
+
